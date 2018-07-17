@@ -4,7 +4,6 @@ apply plugin: 'com.jfrog.bintray'
 version = "1.0.0"
 android {
     compileSdkVersion 27
-    resourcePrefix "pref"
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 27

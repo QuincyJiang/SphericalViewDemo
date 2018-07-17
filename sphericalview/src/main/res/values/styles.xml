@@ -1,11 +1,34 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <declare-styleable name="TagCloudView">
+        <attr name="autoScrollMode">
+            <enum name="disable" value="0" />
+            <enum name="decelerate" value="1" />
+            <enum name="uniform" value="2" />
+        </attr>
+        <attr name="radiusPercent" format="float" />
+        <attr name="scrollSpeed" format="float" />
+        <attr name="lightColor" format="color" />
+        <attr name="darkColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SphericalItemView">
+        <attr format="color" name="mainColor"/>
+        <attr format="string" name="name"/>
+        <attr format="string" name="percentage"/>
+        <attr format="float" name="radiusRatio"/>
+        <attr format="string" name="title"/>
+        <attr format="string" name="subTitle"/>
+        <attr format="integer" name="TitleTextSize"/>
+        <attr format="integer" name="SubTitleTextSize"/>
+        <attr format="integer" name="TextMargin"/>
+    </declare-styleable>
 </resources>
